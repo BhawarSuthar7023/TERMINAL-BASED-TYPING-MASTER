@@ -50,13 +50,13 @@ def show_leaderboard():
 
     #show the leaderboard in terminal
     print()
-    print(colored("🏆 LeaderBoard :- 🏆","red"))
-    print("--------+++------------")
+    print(colored("🏆 LeaderBoard is here :- 🏆","red"))
+    print("---------💚💚💚----------")
 
     rank = 1
     for (username,wpm) in leaderboard.items():
         if rank==1:
-            print(colored(f"{rank}. {username} - {wpm:.2f} WPM :- Winner of The Game 🏆","cyan",))
+            print(colored(f"{rank}. {username} - {wpm:.2f} WPM :- 🏆  Winner of The Game 🏆 🤩","cyan",))
         else:
             print(colored(f"{rank}. {username} - {wpm:.2f} WPM","green"))   
         rank+=1
@@ -113,7 +113,7 @@ def input_taken():
     Username = input("Enter Your Username :- ")
     
     while (username_exists_or_not(Username)) == True:
-        print("Username is already exists.")
+        print("Username is already exists, please use other Username.")
         Username = input("Enter Your Username :- ")
 
     while True:
@@ -142,9 +142,9 @@ def input_taken():
             data = wpm_measure(random_words) #data = [wpm,correct_words,time_taken]
 
             # displaying_the_result
-            print("---------------")
-            print("Results 📈 :-")
-            print("--------------")
+            print("------**********---------")
+            print("   Results is here 📈 :-")
+            print("------**********--------")
             print()
             print(f" Username ==> {Username}")
             print()
@@ -160,10 +160,10 @@ def input_taken():
             show_leaderboard()
 
         elif choice == "3":
-            print("*★*――――*★**★*――――*★**★*――――*★**★*――――*★*")
+            print(colored("*★*――――*★**★*――――*★**★*――――*★**★*――――*★*","grey"))
             print(colored("Thanks For Playing Game.","magenta"))
             print()
-            print(colored(" ❤️  From (KISHAN KUMAR)","magenta"))
+            print(colored(" ❤️  From ##  BHANWAR LAL SUTHAR  ##  💚 ","yellow"))
             break
 
         else:
