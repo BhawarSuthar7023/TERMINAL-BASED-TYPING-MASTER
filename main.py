@@ -143,7 +143,7 @@ def input_taken():
 
             # displaying_the_result
             print("------**********---------")
-            print("   Results is here 📈 :-")
+            print(colored("   Results is here 📈 :-","light_grey"))
             print("------**********--------")
             print()
             print(f" Username ==> {Username}")
