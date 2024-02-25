@@ -5,6 +5,7 @@ Terminal Typing Master is a command-line tool designed to help you enhance your 
 - **Customizable Settings**: Tailor your typing sessions by adjusting difficulty levels, choosing specific exercises, and setting time limits.
 - **Progress Tracking**: Keep track of your typing progress over time to monitor improvements and identify areas for enhancement.
 - **Command-line Interface**: Utilize a simple and intuitive CLI interface for seamless typing practice.
+
 ## Installation
 To install Terminal Typing Master, follow these steps:
 1. Clone the repository to your local machine:
