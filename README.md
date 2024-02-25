@@ -36,11 +36,11 @@ Once installed, you can launch Terminal Typing Master by running the following c
 ```
 Follow the on-screen instructions to initiate typing practice sessions and improve your typing skills.
 ## Starting
-![Intro](starting.png)
+![Intro](images/starting.png)
 ## Results
-![Results](result.png)
+![Results](images/result.png)
 ## Leaderboard
-![Leaderboard](leaderboard.png)
+![Leaderboard](images/leaderboard.png)
 ## Contributing
 We welcome contributions to Terminal Typing Master! If you would like to contribute, please follow these guidelines:
 1. Fork the repository on GitHub.
