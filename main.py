@@ -1,6 +1,9 @@
+
 import json
+from signal import CTRL_BREAK_EVENT, CTRL_C_EVENT
 import time
 import random
+from pygame import QUIT
 from termcolor import colored
 
 # update_leaderboard
@@ -67,6 +70,7 @@ def show_leaderboard():
 # load_words_from_json
 
 def load_words_from_json_function(file_name="collectionofwords.json"):
+    
 
     with open(file_name,"r") as f:
         words = json.load(f)
@@ -105,9 +109,9 @@ def wpm_measure(random_words):
 # input_taking_from_user 
 def input_taken():
     print()
-    print("*★*――――*★**★*――――*★**★*――――*★**★*――――*★*")
-    print(colored(" Welcome to Terminal Typing Master 🎮 :-","magenta",attrs=["bold"]))
-    print("*★*――――*★**★*――――*★**★*――――*★**★*――――*★*")
+    print("―――――――+++++++―――――――――")
+    print(colored(" Welcome to Terminal Typing Master 🎮 :-","grey",attrs=["bold"]))
+    print("――――――――+++++++――――――――")
     print()
 
     Username = input("Enter Your Username :- ")
@@ -134,7 +138,8 @@ def input_taken():
             
             Words = load_words_from_json_function()
             count_of_Words = len(list(Words))
-
+            if Words== CTRL_BREAK_EVENT + QUIT:
+                return "Quit game"
             random_words = random.sample(list(Words),int(user_choice))
 
             # collect_data
